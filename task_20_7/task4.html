@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 4</title>
+</head>
+<body>
+    <script>
+        function csvTo2DArray(csvString) {
+  const rows = csvString.split("\n");
+  const result = [];
+
+  for (const row of rows) {
+    const columns = row.split(",");
+    result.push(columns);
+  }
+
+  return result;
+}
+
+const csvString = "John,Doe,30\nAlice,Smith,25\nBob,Johnson,35";
+const resultArray = csvTo2DArray(csvString);
+
+console.log(resultArray);
+    </script>
+</body>
+</html>
